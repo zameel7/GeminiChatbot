@@ -14,11 +14,33 @@ This is a chatbot built using Gemini API. It is a simple chatbot that can answer
 ```bash
 git clone https://github.com/zameel7/GeminiChatbot.git
 ```
-2. Install the required packages
+2. Change the directory
+```bash
+cd GeminiChatbot
+```
+4. Create a `.env` file and add the following
+```bash
+GOOGLE_GEMINI_KEY=YOUR_API_KEY
+```
+(Replace `YOUR_API_KEY` with your Gemini API key.)
+4. Create a virtual environment
+```bash
+python -m venv venv
+```
+5. Activate the virtual environment
+(For Windows)
+```bash
+venv\Scripts\activate
+```
+(For Linux/Mac)
+```bash
+source venv/bin/activate
+```
+6. Install the required packages
 ```bash
 pip install -r requirements.txt
 ```
-3. Run the app
+7. Run the app
 ```bash 
 streamlit run main.py
 ```
